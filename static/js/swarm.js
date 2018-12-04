@@ -3,7 +3,7 @@
 
 var flock;
 var canvas;
-var canvasWidth = 500;
+var canvasWidth = 600;
 var canvasHeight = 400;
 var nBirds = 100;
 var boidSize = 2.0;
@@ -326,7 +326,7 @@ function toggleSeparation() {
 }
 
 function changeNoise() {
-  noiseLevel = 10*$("#slider-noise").val();
+  noiseLevel = pow($("#slider-noise").val(), 2);
 }
 function changeCohesion() {
   cohesionNeighborDist = 10*$("#slider-cohesiveness").val();
